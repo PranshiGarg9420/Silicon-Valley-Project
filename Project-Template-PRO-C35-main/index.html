@@ -1,0 +1,156 @@
+
+
+<html>
+<head>
+<title>WadMate</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <input type="checkbox" id="check">
+
+    
+    <header>
+        <label for="check">
+            <i class="fa fa-bars" id="slidebar_btn"></i>
+
+        </label>
+
+        <div class="left_area">
+         
+        </div>
+
+        <div class="right_area">
+            <h3>ward<span>mate</span></h3>
+           </div>
+    </header>
+
+    <div class="slidebar">
+        <center>
+            <img src="profile.jpg" class="profile_img" alt="">
+            <h4>User</h4>
+        </center>
+
+        <a href="#"><i class="fa fa-user-circle"></i><span>Profile</span></a>
+
+        <a href="vdo.html"><i class="fa fa-camera "></i><span>Camera</span></a>
+        <a href="#"><i class="fa fa fa-folder"></i><span>My Collections</span></a>
+        <a href="#"><i class="fa fa-file-text "></i><span>Articles</span></a>
+        <a href="#"><i class="fa fa-phone"></i><span>Helpline</span></a>
+        <a href="#"><i class="fa fa-sign-out"></i><span>Log Out</span></a>
+        
+        
+    </div>
+
+    <div class="content"></div>
+
+
+
+
+
+    <div class="container">
+        <div class="widget">
+            <div class="left">
+                <img src="cloudy.png" class="icon">
+                <h5 class="weather-status">Partly Cloudy</h5>
+            </div>
+            <div class="right">
+                <h5 class="city">Your Area</h5>
+                <h5 class="degree">36&#176;c</h5>
+            </div>
+            <div class="bottom">
+                <div>
+                    Wind Speed <br><span>22 kmph</span>
+                </div>
+                <div>
+                    Cloud Cover <br><span>22%</span>
+
+                </div>
+                <div>
+                    Pressure <br><span>1010 mb</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="june"><img src="junee.png"></div>
+    <div class="one"><img src="iccon.png"></div>
+    <div class="two"><img src="iccon.png"></div>
+    <div class="three"><img src="iccon.png"></div>
+    <div class="four"><img src="iccon.png"></div>
+    <div class="five"><img src="iccon.png"></div>
+    
+
+    <div class="outfitBG">
+        <h4 class="heading">TODAY'S OUTFIT</h4>
+        
+       
+       <img src="upper.png" width="300" height="360px" class="ur">
+        <img src="bottoms.png" class="br">
+        <img src="shoes.png" width="150" height="100" class="sr">
+        <button class="button button1">Choose</button>
+    </div>
+
+
+
+   <div class="slider">
+       <div class="slides">
+           <input type="radio" name="radio-btn" id="radio1">
+           <input type="radio" name="radio-btn" id="radio2">
+           <input type="radio" name="radio-btn" id="radio3">
+           <input type="radio" name="radio-btn" id="radio4">
+
+           <div class="slide first">
+               <img src="4.jpg" alt="">
+           </div>
+
+           <div class="slide ">
+            <img src="2.gif" alt="">
+          </div>
+
+        <div class="slide ">
+            <img src="3.png" alt="">
+        </div>
+
+        <div class="slide ">
+            <img src="1.png" alt="">
+        </div>
+
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+
+        </div>
+       </div>
+       <div class="navigation-manual">
+           <label for="radio1" class="manual-btn"></label>
+           <label for="radio2" class="manual-btn"></label>
+           <label for="radio3" class="manual-btn"></label>
+           <label for="radio4" class="manual-btn"></label>
+       </div>
+   </div>
+    
+ 
+    <script type="text/javascript">
+    var counter=1;
+    setInterval(function(){
+        document.getElementById('radio-btn'+counter).checked=true;
+        counter++;
+        if(counter>4){
+            counter=1;
+        }
+    },5000);
+    </script>
+
+  
+
+
+
+    
+
+</body>
+</html>
